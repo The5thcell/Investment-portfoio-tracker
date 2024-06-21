@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../links.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>Investment Portfolio</h1>
+
+      <section id="investment" class="investment-container">
+        <form action="" id="investment-form">
+          <h2>Invested amount</h2>
+          <input
+            type="number"
+            placeholder="Amount"
+            id="investment-amount"
+            required
+          />
+
+          <input type="date" id="investment-date" required />
+          <button type="submit" id="add-investment" class="btn">Add</button>
+        </form>
+        <section class="investment-results">
+          <header class="investment-results-header">
+            <h2>Investment List</h2>
+            <button id="save-investment-btn" class="btn">
+              <i class="fa-regular fa-floppy-disk"></i> CSV
+            </button>
+          </header>
+          <ul id="investment-list">
+            <!-- <li class="investment-list-item">
+              <p>data</p>
+              <b>$0.00</b>
+              <div class="investment-actions">
+                <i class="edit fa-solid fa-pen-to-square"></i>
+                <i class="delete fa-solid fa-trash"></i>
+              </div>
+            </li> -->
+          </ul>
+          <div id="total-invested" class="result">
+            <span>Total invested amount:</span> <span>$0.00</span>
+          </div>
+        </section>
+      </section>
+      <section class="add-stock">
+        <h2>Add/Edit Stock</h2>
+        <form id="add-stock-form">
+          <div class="stock-ids">
+            <input type="text" id="symbol" placeholder="Stock symbol" />
+            <input type="text" id="name" placeholder="Stock name" />
+          </div>
+          <div class="stock-quantities">
+            <input type="text" placeholder="Shares" id="shares" />
+            <input
+              type="text"
+              placeholder="Buy-in price"
+              id="buy-in-price"
+            /><input
+              type="text"
+              placeholder="Current price"
+              id="current-price"
+            />
+          </div>
+          <button type="submit" class="btn">Add / Edit</button>
+        </form>
+      </section>
+      <section class="portfolio">
+        <h2>Stock Portfolio</h2>
+        <div class="portfolio-table-container">
+          <table>
+            <thead id="portfolio-table">
+              <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Buy-in</th>
+                <th>Cur. Price</th>
+                <th>Cur. Value</th>
+                <th>Return</th>
+                <th>Gain/Loss</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="portfolio-body"></tbody>
+          </table>
+        </div>
+        <h3 id="portfolio-total" class="result">
+          <span>Total portfolio value:</span><span>$0.00</span>
+        </h3>
+      </section>
+      <section id="portfolio-analysis">
+        <h2>Portfolio Analysis</h2>
+        <div>
+          <input type="number" id="free-cash" placeholder="Free cash" />
+          <button class="btn" id="portfolio-analysis-btn">Analyze</button>
+        </div>
+        <div class="result">
+          <div class="analysis-results">
+            <h2 class="analysis-gain-loss">
+              Gain/Loss: <span class="value">$0.00</span>
+            </h2>
+            <h2 class="analysis-return">
+              Return: <span class="value">$0.00</span>
+            </h2>
+          </div>
+          <div class="pie-chart-container">
+            <canvas id="pie-chart" width="200" height="200"> </canvas>
+          </div>
+          <ul id="pie-chart-legend"></ul>
+        </div>
+      </section>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

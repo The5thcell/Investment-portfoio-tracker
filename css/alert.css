@@ -1,0 +1,41 @@
+.alert {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  &.danger {
+    background-color: #f44336;
+  }
+  &.success {
+    background-color: #4caf50;
+  }
+  &.info {
+    background-color: #2196f3;
+  }
+  &.warning {
+    background-color: #ff9800;
+  }
+  &.show {
+    display: block;
+    animation: fadeOut 1s;
+  }
+  animation: fadeIn 1s;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.portfolio {
+  width: 100%;
+
+  & h2 {
+    margin: 2rem 0;
+  }
+  .portfolio-table-container {
+    overflow: scroll;
+    max-height: 400px;
+    & tr {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 4fr repeat(7, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      & td,
+      & th {
+        border-right: 1px solid #ddd;
+        padding-right: 5px;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    #portfolio-body {
+      & tr {
+        background-color: #fff;
+        margin-bottom: 1rem;
+        padding: 0.3rem;
+        border-radius: 5px;
+        border: 1px solid var(--secondary-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+#portfolio-analysis {
+  width: 100%;
+  & h2 {
+    margin: 2rem 0;
+  }
+  .btn {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .pie-chart-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*  */

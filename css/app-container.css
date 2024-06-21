@@ -1,0 +1,54 @@
+.app-container {
+  height: fit-content !important;
+  max-width: 800px;
+  flex-direction: column;
+  padding: 1rem;
+  margin: auto;
+  /* background-color: var(--bg-color); */
+
+  /* color: var(--text-color); */
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  /* text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.15); */
+  & input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: #ddd;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+  }
+  & i.fa-solid {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: var(--bg-color);
+    }
+  }
+
+  .result {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
